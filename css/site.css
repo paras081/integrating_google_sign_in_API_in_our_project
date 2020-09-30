@@ -1,0 +1,113 @@
+body
+{
+color: #464646;
+font-weight: bold;
+font-family: 'Montserrat', sans-serif;
+font-size: 16px;
+background-image: url(atmiya.jpeg);
+background-repeat:no-repeat;
+background-size:cover;
+}
+
+.a
+{
+width: 100%;
+height: 100%;
+background: #5057d8; /* Old browsers */
+/*background: -moz-linear-gradient(45deg, #8386db 1%, #5057d8 44%, #383de0 65%, #383ee2 81%, #383ee2 81%, #161ae5 100%);  FF3.6-15 */
+/*background: -webkit-linear-gradient(45deg, #8386db 1%,#5057d8 44%,#383de0 65%,#383ee2 81%,#383ee2 81%,#161ae5 100%);  Chrome10-25,Safari5.1-6 */
+/* background: linear-gradient(45deg, #8386db 1%,#5057d8 44%,#383de0 65%,#383ee2 81%,#383ee2 81%,#161ae5 100%); /*W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+/*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8386db', endColorstr='#161ae5',GradientType=1 );  IE6-9 fallback on horizontal gradient */
+opacity: 0.9;
+}
+
+.b
+{
+padding: 25px 50px 25px 50px;
+background-color: #fff;
+display: inline-block;
+}
+
+.inputbox
+{
+border: 1px solid #464646;
+padding: 5px;
+width: 300px;
+color: #464646;
+background-color: #fff;
+border-radius: 5px;
+transition: all 0.5s;
+font-weight: normal;
+}
+
+.inputbox:focus
+{
+border: 1px solid blue;
+padding: 5px;
+background-color: white;
+color: blue;
+font-weight: bold;
+}
+
+h2
+{
+padding: 0px;
+margin: 0px;
+}
+
+.btn-normal
+{
+padding: 5px 35px;
+color: #fff;
+transition: all 0.5s;
+border-radius: 5px;
+border: 2px solid blue;
+background-color: blue;
+font-weight: bold;
+cursor: pointer;
+}
+
+.btn-normal:hover, .btn-normal:focus
+{
+color: blue;
+border: 2px solid blue;
+background-color: white;
+text-decoration: none;
+}
+
+.f
+{
+font-weight: bold;
+color: blue;
+}
+
+.f:hover, .f:focus
+{
+color: black;
+}
+
+.btn-normal-logo
+{
+background-color: white;
+border: 1px solid #464646;
+color: #464646;
+font-weight: bold;
+border-radius: 5px;
+}
+
+.btn-normal-logo:focus, .btn-normal-logo:hover
+{
+border: 1px solid blue;
+color: blue;
+}
+.rem
+{
+padding-top:0px;
+margin-top:0px;	
+}
+.rem2
+{
+padding-bottom:0px;
+margin-bottom:0px;
+border-bottom:0px;	
+}
