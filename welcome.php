@@ -1,21 +1,21 @@
 <?php
-	session_start();
+session_start();
 
-	if(empty($_SESSION['username']) && empty($_SESSION['user_first_name']))
-	{
-		echo "session username is empty";
-		header('Location:login.php');
-	}else
-	{
-		$usr=$_SESSION['username'];
+if (empty($_SESSION['username']) && empty($_SESSION['user_first_name'])) {
+	echo "session username is empty";
+	header('Location:login.php');
+} else {
+	$usr = $_SESSION['username'];
 ?>
-<html>
+	<html>
+
 	<head>
 		<title>Welcome</title>
 		<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 		<link rel="stylesheet" href="css/site.css" />
 	</head>
+
 	<body>
 		<div>
 			<div class="a">
@@ -32,29 +32,35 @@
 									</tr>
 									<tr>
 										<td align="center">
-											<h1><?php 	echo $usr.'<br>'; ?></h1>
+											<h1><?php echo $usr . '<br>'; ?></h1>
 										</td>
 									</tr>
-									
-									<tr><td align="center"><?php
-   									 echo '<img src="'.$_SESSION["user_image"].'" height="100px" width="100px" />';
 
-   									 ?>
-   									 </td></tr>
+									<tr>
+										<td align="center"><?php
+															echo '<img src="' . $_SESSION["user_image"] . '" height="100px" width="100px" />';
 
-
-									<tr><td><?php
-											echo '<h3><b>Name :</b> '.$_SESSION['user_first_name'].' '.$_SESSION['user_last_name'].'</h3>';
-										?>
-   									
-   									 </td></tr>
+															?>
+										</td>
+									</tr>
 
 
-									<tr><td>
-									<?php
-										echo '<h3><b>Email :</b> '.$_SESSION['user_email_address'].'</h3>';
-										?>
-   									 </td></tr>
+									<tr>
+										<td><?php
+											echo '<h3><b>Name :</b> ' . $_SESSION['user_first_name'] . ' ' . $_SESSION['user_last_name'] . '</h3>';
+											?>
+
+										</td>
+									</tr>
+
+
+									<tr>
+										<td>
+											<?php
+											echo '<h3><b>Email :</b> ' . $_SESSION['user_email_address'] . '</h3>';
+											?>
+										</td>
+									</tr>
 
 									<tr>
 										<td align="center">
@@ -70,7 +76,8 @@
 			</div>
 		</div>
 	</body>
-</html>
+
+	</html>
 <?php
 }
 ?>
